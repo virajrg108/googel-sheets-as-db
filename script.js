@@ -4,10 +4,9 @@ $(document).ready(function(){
     var email =  document.getElementById("email").value;
     var msg =  document.getElementById("msg").value;
     console.log(name, email, msg);
-    $.get("https://script.google.com/macros/s/AKfycby9S61GX0h8zrZaOVh3E-J2EMFq07qIP_Z3l2q2SbaKy9xgiWM/exec", { name:name, email:email, msg:msg });
+    $.get("https://script.google.com/macros/s/AKfycby8uLny0p-GuStHktClEm9CqsphI8mp2fEaQE8i84g72BHpKGL5/exec", { name:name, email:email, msg:msg });
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("msg").value = "";
-    alert("Message sent successfully");
   });
 });
