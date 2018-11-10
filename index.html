@@ -14,21 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>  
   <body>
-    <script>
-      $(document).ready(function(){
-          $("#sub").click(function(){
-            var name =  document.getElementById("name").value;
-            var email =  document.getElementById("email").value;
-            var msg =  document.getElementById("msg").value;
-            console.log(name, email, msg);
-            $.get("https://script.google.com/macros/s/AKfycby9S61GX0h8zrZaOVh3E-J2EMFq07qIP_Z3l2q2SbaKy9xgiWM/exec", { name:name, email:email, msg:msg });
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("msg").value = "";
-            alert("Message sent successfully");
-          });
-      });
-    </script>
     <h1>Hi there!</h1>
     <div class="col-sm-10 col-md-9" style="margin:auto">
       <input type="text" id="name" placeholder="Name" class="form-control cust-input" style="height:30px;">
